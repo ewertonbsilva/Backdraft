@@ -1,0 +1,32 @@
+[Unit]
+Description=Backdraft - vulnerabilidades do Wazuh e como corrigir (somente leitura)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=backdraft
+Group=backdraft
+EnvironmentFile=/opt/backdraft/.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+WorkingDirectory=/opt/backdraft
+StateDirectory=backdraft
+StateDirectoryMode=0750
+ExecStart=/usr/bin/python3 /opt/backdraft/backdraft.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6
+RestrictNamespaces=true
+LockPersonality=true
+CapabilityBoundingSet=
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

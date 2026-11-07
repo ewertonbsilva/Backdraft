@@ -1,0 +1,2 @@
+# So e necessario para login por LDAP. Usuarios locais funcionam sem nenhuma dependencia (apenas a biblioteca padrao do Python).
+ldap3==2.9.1

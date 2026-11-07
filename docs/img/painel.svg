@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="1100" height="660" role="img" aria-label="Ilustração do painel do Backdraft, com dados fictícios">
+  <defs>
+    <linearGradient id="topo" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b1518"/><stop offset="1" stop-color="#6d2a33"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DC3545" stop-opacity="0.28"/><stop offset="1" stop-color="#DC3545" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: "Segoe UI", system-ui, Arial, sans-serif; fill: #2b1518; }
+    .h { font-size: 15px; font-weight: 700; fill: #432328; } .s { font-size: 12.5px; fill: #6b5a5e; } .v { font-size: 30px; font-weight: 700; }
+    .card { fill: #fff; stroke: #e6dcde; stroke-width: 1.5; } .th { font-size: 12.5px; font-weight: 700; fill: #432328; }
+  </style>
+  <rect width="1100" height="660" rx="14" fill="#f6f1f2"/>
+  <!-- barra do topo -->
+  <rect width="1100" height="56" rx="14" fill="url(#topo)"/><rect y="40" width="1100" height="16" fill="url(#topo)"/><rect y="54" width="1100" height="4" fill="#DC3545"/>
+  <rect x="18" y="12" width="32" height="32" rx="8" fill="#432328" stroke="#DC3545" stroke-width="2"/>
+  <path d="M34 19 C38 26 43 28 43 34 C43 39 39 42 34 42 C29 42 25 39 25 34 C25 31 28 29 29 26 C31 29 33 28 34 19 Z" fill="#ff8a1f"/>
+  <text x="62" y="35" font-size="19" font-weight="700" style="fill:#fff">Backdraft</text>
+  <text x="1082" y="35" text-anchor="end" font-size="13" style="fill:#f3d9dc">Relatório · usuario.exemplo · Sair</text>
+  <!-- abas -->
+  <rect x="18" y="68" width="110" height="30" rx="6" fill="#DC3545"/><text x="73" y="88" text-anchor="middle" font-size="13.5" style="fill:#fff">Visão geral</text>
+  <text x="164" y="88" text-anchor="middle" class="s">Servidores</text><text x="250" y="88" text-anchor="middle" class="s">Por pacote</text>
+  <text x="350" y="88" text-anchor="middle" class="s">Vulnerabilidades</text><text x="462" y="88" text-anchor="middle" class="s">Como corrigir</text><text x="556" y="88" text-anchor="middle" class="s">Como ler</text>
+  <!-- KPIs -->
+  <rect class="card" x="18" y="112" width="200" height="86" rx="10"/><rect x="18" y="112" width="6" height="86" rx="3" fill="#b3202f"/><text class="s" x="40" y="136">Críticas</text><text class="v" x="40" y="176" style="fill:#b3202f">128</text><text class="s" x="120" y="176">-6 vs. ontem</text>
+  <rect class="card" x="230" y="112" width="200" height="86" rx="10"/><rect x="230" y="112" width="6" height="86" rx="3" fill="#e8732a"/><text class="s" x="252" y="136">Altas</text><text class="v" x="252" y="176">904</text><text class="s" x="330" y="176">+12 vs. ontem</text>
+  <rect class="card" x="442" y="112" width="200" height="86" rx="10"/><rect x="442" y="112" width="6" height="86" rx="3" fill="#d9a21b"/><text class="s" x="464" y="136">Médias</text><text class="v" x="464" y="176">1.263</text>
+  <rect class="card" x="654" y="112" width="200" height="86" rx="10"/><rect x="654" y="112" width="6" height="86" rx="3" fill="#4f8fbf"/><text class="s" x="676" y="136">Baixas</text><text class="v" x="676" y="176">311</text>
+  <rect class="card" x="866" y="112" width="216" height="86" rx="10" style="stroke:#DC3545;stroke-width:2"/><text class="s" x="888" y="136">Exploradas na prática</text><text class="v" x="888" y="176" style="fill:#b3202f">7</text><text class="s" x="920" y="176">CVEs (lista da CISA)</text>
+  <!-- rosca -->
+  <rect class="card" x="18" y="212" width="330" height="236" rx="10"/><text class="h" x="36" y="240">Por gravidade</text>
+  <g transform="translate(120,342)" fill="none" stroke-width="30">
+    <circle r="62" stroke="#eee5e7"/>
+    <circle r="62" stroke="#b3202f" stroke-dasharray="19.5 370" transform="rotate(-90)"/>
+    <circle r="62" stroke="#e8732a" stroke-dasharray="136 253" stroke-dashoffset="-19.5" transform="rotate(-90)"/>
+    <circle r="62" stroke="#d9a21b" stroke-dasharray="187 202" stroke-dashoffset="-155.5" transform="rotate(-90)"/>
+    <circle r="62" stroke="#4f8fbf" stroke-dasharray="46 343" stroke-dashoffset="-342.5" transform="rotate(-90)"/>
+  </g>
+  <text x="120" y="346" text-anchor="middle" font-size="20" font-weight="700">2,6 mil</text><text class="s" x="120" y="364" text-anchor="middle">registros</text>
+  <rect x="215" y="296" width="11" height="11" fill="#b3202f"/><text x="232" y="306" class="s">Crítica · 5%</text>
+  <rect x="215" y="324" width="11" height="11" fill="#e8732a"/><text x="232" y="334" class="s">Alta · 35%</text>
+  <rect x="215" y="352" width="11" height="11" fill="#d9a21b"/><text x="232" y="362" class="s">Média · 48%</text>
+  <rect x="215" y="380" width="11" height="11" fill="#4f8fbf"/><text x="232" y="390" class="s">Baixa · 12%</text>
+  <!-- tendencia -->
+  <rect class="card" x="362" y="212" width="360" height="236" rx="10"/><text class="h" x="380" y="240">Tendência (30 dias)</text>
+  <g stroke="#eee5e7" stroke-width="1"><path d="M384 270 H704 M384 320 H704 M384 370 H704 M384 420 H704"/></g>
+  <path d="M388 300 L430 306 L472 312 L514 322 L556 318 L598 336 L640 350 L682 360 L700 362 V420 H388 Z" fill="url(#area)"/>
+  <path d="M388 300 L430 306 L472 312 L514 322 L556 318 L598 336 L640 350 L682 360 L700 362" fill="none" stroke="#DC3545" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M388 380 L430 378 L472 382 L514 376 L556 384 L598 388 L640 392 L682 396 L700 398" fill="none" stroke="#e8732a" stroke-width="2.5"/>
+  <text class="s" x="384" y="440">há 30 dias</text><text class="s" x="704" y="440" text-anchor="end">hoje</text>
+  <!-- servidores -->
+  <rect class="card" x="736" y="212" width="346" height="236" rx="10"/><text class="h" x="754" y="240">Servidores com mais críticas</text>
+  <text x="754" y="270" class="s">srv-web-01</text><rect x="838" y="259" width="190" height="14" rx="3" fill="#b3202f"/>
+  <text x="754" y="300" class="s">srv-db-02</text><rect x="838" y="289" width="150" height="14" rx="3" fill="#b3202f"/>
+  <text x="754" y="330" class="s">srv-app-03</text><rect x="838" y="319" width="118" height="14" rx="3" fill="#b3202f"/>
+  <text x="754" y="360" class="s">srv-file-01</text><rect x="838" y="349" width="84" height="14" rx="3" fill="#b3202f"/>
+  <text x="754" y="390" class="s">estacao-014</text><rect x="838" y="379" width="52" height="14" rx="3" fill="#b3202f"/>
+  <text x="754" y="420" class="s">estacao-027</text><rect x="838" y="409" width="30" height="14" rx="3" fill="#b3202f"/>
+  <!-- tabela KEV -->
+  <rect class="card" x="18" y="462" width="1064" height="170" rx="10"/><text class="h" x="36" y="490">Exploradas ativamente (CISA): corrigir primeiro</text>
+  <rect x="30" y="500" width="1040" height="24" fill="#f6eef0"/>
+  <text class="th" x="40" y="517">CVE</text><text class="th" x="190" y="517">O que é</text><text class="th" x="800" y="517" text-anchor="end">Máquinas</text><text class="th" x="920" y="517" text-anchor="end">EPSS</text><text class="th" x="1050" y="517" text-anchor="end">Prazo CISA</text>
+  <text x="40" y="546" class="s">CVE-2024-0000</text><text x="190" y="546" class="s">Exemplo: execução remota de código em um servidor web</text><text x="800" y="546" class="s" text-anchor="end">12</text><text x="920" y="546" class="s" text-anchor="end">94%</text><text x="1050" y="546" class="s" text-anchor="end">dd/mm/aaaa</text>
+  <text x="40" y="574" class="s">CVE-2023-0000</text><text x="190" y="574" class="s">Exemplo: elevação de privilégio no kernel</text><text x="800" y="574" class="s" text-anchor="end">8</text><text x="920" y="574" class="s" text-anchor="end">41%</text><text x="1050" y="574" class="s" text-anchor="end">dd/mm/aaaa</text>
+  <text x="40" y="602" class="s">CVE-2022-0000</text><text x="190" y="602" class="s">Exemplo: falha em biblioteca de compressão (ransomware)</text><text x="800" y="602" class="s" text-anchor="end">3</text><text x="920" y="602" class="s" text-anchor="end">7%</text><text x="1050" y="602" class="s" text-anchor="end">dd/mm/aaaa</text>
+  <text x="1082" y="650" text-anchor="end" class="s">Ilustração com dados fictícios</text>
+</svg>

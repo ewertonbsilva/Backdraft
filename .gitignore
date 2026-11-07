@@ -1,0 +1,22 @@
+# segredos e configuracao local: NUNCA no git
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+tls/
+# dados gerados em execucao
+estado/
+historico.jsonl
+criticas.json
+# python
+__pycache__/
+*.pyc
+lib/
+.venv/
+# editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

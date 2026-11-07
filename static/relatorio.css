@@ -1,0 +1,47 @@
+/* Relatório para imprimir / salvar em PDF (A4). Usa as cores e os gráficos do painel. */
+body.rel { background: #e9e1e3; margin: 0; padding: 16px; font-family: "Segoe UI", system-ui, Roboto, Arial, sans-serif; color: var(--texto); }
+.rel-acoes { max-width: 210mm; margin: 0 auto 12px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.rel-pagina { max-width: 210mm; margin: 0 auto; background: #fff; padding: 14mm 14mm 12mm; box-shadow: 0 6px 24px rgba(43, 21, 24, .18); border-top: 8px solid var(--vermelho); }
+.rel-cab { display: flex; gap: 16px; align-items: center; border-bottom: 2px solid var(--vinho); padding-bottom: 10px; margin-bottom: 12px; }
+.rel-cab img { width: 62px; height: 60px; object-fit: contain; }
+.rel-cab h1 { margin: 0; font-size: 1.5em; color: var(--vinho); } .rel-cab p { margin: 2px 0 0; font-size: .86em; color: var(--suave); } .rel-cab .rel-data { font-size: .78em; }
+.rel-sec { margin: 0 0 14px; } .rel-sec h2 { font-size: 1.02em; color: var(--vinho); margin: 0 0 8px; padding-bottom: 3px; border-bottom: 1px solid var(--borda); }
+.rel-resumo { font-size: .92em; line-height: 1.5; margin: 0 0 10px; }
+.rel-kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; } .rel-kpis .kpi { padding: 8px 10px; } .rel-kpis .valor { font-size: 1.5em; }
+.rel-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.rel-tab { width: 100%; border-collapse: collapse; font-size: .8em; } .rel-tab th { text-align: left; background: #f6eef0; color: var(--vinho); padding: 4px 6px; position: static; }
+.rel-tab td { padding: 3px 6px; border-bottom: 1px solid #f0e6e8; white-space: normal; overflow-wrap: anywhere; } .rel-tab .num { text-align: right; }
+.rel-rec { margin: 0; padding-left: 20px; font-size: .88em; line-height: 1.5; } .rel-rec li { margin-bottom: 4px; }
+.rel-rodape { font-size: .72em; color: var(--suave); border-top: 1px solid var(--borda); padding-top: 6px; margin-top: 10px; }
+.rel .donut { width: 118px; height: 118px; } .rel .donut-box { gap: 10px; } .rel .legenda { flex: 1 1 130px; font-size: .76em; gap: 5px; }
+.rel .legenda li { grid-template-columns: 11px minmax(0, 1fr) auto 38px; gap: 6px; } .rel .legenda .rot { overflow-wrap: break-word; word-break: normal; hyphens: none; } .rel .pilha-barra { animation: none; }
+
+.rel-cab .rel-escopo { font-size: 1.05em; font-weight: 700; color: var(--vermelho-esc); margin: 3px 0 2px; }
+.rel-servidor { margin-top: 18px; padding-top: 6px; border-top: 3px solid var(--vermelho); }
+.rel-srv-t { margin: 8px 0 2px; font-size: 1.35em; color: var(--vinho); } .rel-srv-sub { margin: 0 0 10px; font-size: .84em; color: var(--suave); }
+.rel-antes { list-style: none; margin: 0; padding: 0; font-size: .84em; line-height: 1.45; } .rel-antes li { margin-bottom: 4px; }
+.rel-cmd-t { margin: 8px 0 2px; font-size: .8em; color: var(--suave); }
+.rel-cmd { background: #f3eeef; color: #1c1a1b; border: 1px solid var(--borda); border-radius: 4px; padding: 5px 8px; margin: 0; font: .78em/1.4 Consolas, "SF Mono", monospace; white-space: pre-wrap; overflow-wrap: anywhere; max-height: none; }
+.rel-nota { font-size: .84em; color: #4a3b3e; margin: 4px 0; }
+.rel-conf { margin: -4px 0 12px; padding: 4px 8px; border: 1px solid var(--vermelho-esc); color: var(--vermelho-esc); background: #fdf1f2; font-size: .74em; font-weight: 700; letter-spacing: .3px; border-radius: 3px; }
+.rel-exec { background: #faf6f7; border: 1px solid var(--borda); border-left: 5px solid var(--vermelho); border-radius: 4px; padding: 8px 12px 6px; }
+.rel-exec h2 { border-bottom: 0; margin-bottom: 4px; }
+.rel-exec-l { margin: 0; padding-left: 18px; font-size: .88em; line-height: 1.5; } .rel-exec-l li { margin-bottom: 3px; }
+.rel-exec-l .rel-alerta { color: #8a1c28; font-weight: 600; }
+.rel-rodape-fixo { display: none; }
+
+@media print {
+    @page { size: A4; margin: 12mm; }
+    body.rel { background: #fff; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .sem-impressao { display: none !important; }
+    .rel-pagina { box-shadow: none; max-width: none; padding: 0; border-top: 0; }
+    .sem-quebra, .rel-kpis, .rel-cab { break-inside: avoid; page-break-inside: avoid; }
+    .rel-sec h2 { break-after: avoid; }
+    .rel-servidor { break-before: page; page-break-before: always; margin-top: 0; }
+    .rel-servidor:first-of-type { break-before: auto; page-break-before: auto; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    /* repete em TODAS as paginas impressas: o aviso de confidencialidade nao some se alguem imprimir so uma folha */
+    .rel-rodape-fixo { display: block; position: fixed; bottom: 0; left: 0; right: 0; text-align: center; font-size: 8pt; color: #8a1c28; background: #fff; padding: 1mm 0; border-top: .3pt solid #c9c2c4; }
+    .rel-pagina { padding-bottom: 8mm; }
+}
+@media (max-width: 700px) { .rel-2col { grid-template-columns: 1fr; } .rel-kpis { grid-template-columns: repeat(2, 1fr); } .rel-pagina { padding: 10mm 6mm; } }

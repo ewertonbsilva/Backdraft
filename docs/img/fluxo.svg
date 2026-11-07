@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330" width="1100" height="330" role="img" aria-label="Do dado do Wazuh à correção aplicada">
+  <defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#432328"/></marker></defs>
+  <style>
+    text { font-family: "Segoe UI", system-ui, Arial, sans-serif; fill: #2b1518; }
+    .n { font-size: 34px; font-weight: 700; fill: #fff; } .t { font-size: 20px; font-weight: 700; } .s { font-size: 14.5px; fill: #5f4a4f; }
+    .c { fill: #fff; stroke: #432328; stroke-width: 2.5; }
+  </style>
+  <rect width="1100" height="330" fill="#fff"/>
+  <g>
+    <rect class="c" x="20" y="60" width="230" height="220" rx="14"/><circle cx="60" cy="60" r="26" fill="#DC3545"/><text class="n" x="60" y="72" text-anchor="middle">1</text>
+    <text class="t" x="135" y="125" text-anchor="middle">O Wazuh detecta</text>
+    <text class="s" x="135" y="156" text-anchor="middle">Cruza o inventário de</text><text class="s" x="135" y="176" text-anchor="middle">pacotes de cada agente</text><text class="s" x="135" y="196" text-anchor="middle">com as bases de CVE.</text>
+    <text class="s" x="135" y="232" text-anchor="middle" style="fill:#8a1c28">Não gera alerta de CVE.</text>
+  </g>
+  <path d="M252 170 H290" stroke="#432328" stroke-width="2.5" marker-end="url(#seta)"/>
+  <g>
+    <rect class="c" x="292" y="60" width="230" height="220" rx="14"/><circle cx="332" cy="60" r="26" fill="#DC3545"/><text class="n" x="332" y="72" text-anchor="middle">2</text>
+    <text class="t" x="407" y="125" text-anchor="middle">O Backdraft prioriza</text>
+    <text class="s" x="407" y="156" text-anchor="middle">CVEs já exploradas (KEV)</text><text class="s" x="407" y="176" text-anchor="middle">vêm primeiro; depois a</text><text class="s" x="407" y="196" text-anchor="middle">chance de exploração</text><text class="s" x="407" y="216" text-anchor="middle">(EPSS) e a gravidade.</text>
+  </g>
+  <path d="M524 170 H562" stroke="#432328" stroke-width="2.5" marker-end="url(#seta)"/>
+  <g>
+    <rect class="c" x="564" y="60" width="230" height="220" rx="14"/><circle cx="604" cy="60" r="26" fill="#DC3545"/><text class="n" x="604" y="72" text-anchor="middle">3</text>
+    <text class="t" x="679" y="125" text-anchor="middle">Mostra o que fazer</text>
+    <text class="s" x="679" y="156" text-anchor="middle">Versão a instalar, onde um</text><text class="s" x="679" y="176" text-anchor="middle">patch resolve mais, kernels</text><text class="s" x="679" y="196" text-anchor="middle">para reiniciar e o “antes</text><text class="s" x="679" y="216" text-anchor="middle">de corrigir”.</text>
+  </g>
+  <path d="M796 170 H834" stroke="#432328" stroke-width="2.5" marker-end="url(#seta)"/>
+  <g>
+    <rect class="c" x="836" y="60" width="244" height="220" rx="14" style="stroke:#DC3545"/><circle cx="876" cy="60" r="26" fill="#DC3545"/><text class="n" x="876" y="72" text-anchor="middle">4</text>
+    <text class="t" x="958" y="125" text-anchor="middle">Uma pessoa aplica</text>
+    <text class="s" x="958" y="156" text-anchor="middle">Os comandos são só texto</text><text class="s" x="958" y="176" text-anchor="middle">para copiar. O painel não</text><text class="s" x="958" y="196" text-anchor="middle">executa nada nos servidores.</text>
+    <text class="s" x="958" y="232" text-anchor="middle" style="fill:#8a1c28">Snapshot, janela e teste.</text>
+  </g>
+</svg>

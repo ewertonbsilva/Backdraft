@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Backdraft: escudo (segurança) com chama (o nome). Cores: vinho #432328, vermelho #DC3545. -->
+  <defs>
+    <linearGradient id="bd-tile" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#7a2a35"/>
+      <stop offset="1" stop-color="#2b1518"/>
+    </linearGradient>
+    <linearGradient id="bd-fire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="0.5" stop-color="#ff8a1f"/>
+      <stop offset="1" stop-color="#DC3545"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ladrilho -->
+  <rect width="512" height="512" rx="112" fill="url(#bd-tile)"/>
+  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#DC3545" stroke-width="12" stroke-opacity="0.9"/>
+
+  <!-- escudo -->
+  <path d="M256 66 L424 128 V268 C424 362 344 432 256 466 C168 432 88 362 88 268 V128 Z"
+        fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="22" stroke-linejoin="round"/>
+
+  <!-- chama -->
+  <path d="M256 138 C282 198 336 224 336 298 C336 358 300 400 256 400 C212 400 176 358 176 298 C176 260 198 240 210 208 C224 236 242 230 256 138 Z"
+        fill="url(#bd-fire)"/>
+  <!-- miolo da chama -->
+  <path d="M256 262 C270 290 296 304 296 338 C296 364 278 382 256 382 C234 382 216 364 216 340 C216 318 230 308 238 288 C246 304 252 298 256 262 Z"
+        fill="#fff4cc"/>
+</svg>
