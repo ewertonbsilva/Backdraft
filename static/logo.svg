@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Backdraft: escudo (segurança) com chama (o nome). Cores: vinho #432328, vermelho #DC3545. -->
+  <!-- Backdraft: escudo (segurança) com chama (o nome). Cores: azul-marinho #12395f, azul #2f86eb, chama laranja. -->
   <defs>
     <linearGradient id="bd-tile" x1="0" y1="0" x2="0.35" y2="1">
-      <stop offset="0" stop-color="#7a2a35"/>
-      <stop offset="1" stop-color="#2b1518"/>
+      <stop offset="0" stop-color="#1e5b94"/>
+      <stop offset="1" stop-color="#0a2540"/>
     </linearGradient>
     <linearGradient id="bd-fire" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffd166"/>
       <stop offset="0.5" stop-color="#ff8a1f"/>
-      <stop offset="1" stop-color="#DC3545"/>
+      <stop offset="1" stop-color="#f2542d"/>
     </linearGradient>
   </defs>
 
   <!-- ladrilho -->
   <rect width="512" height="512" rx="112" fill="url(#bd-tile)"/>
-  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#DC3545" stroke-width="12" stroke-opacity="0.9"/>
+  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#2f86eb" stroke-width="12" stroke-opacity="0.9"/>
 
   <!-- escudo -->
   <path d="M256 66 L424 128 V268 C424 362 344 432 256 466 C168 432 88 362 88 268 V128 Z"

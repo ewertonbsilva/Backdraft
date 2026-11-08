@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" aria-label="Arquitetura do Backdraft">
   <defs>
-    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#432328"/></marker>
-    <marker id="seta2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a7378"/></marker>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#12395f"/></marker>
+    <marker id="seta2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#737e8a"/></marker>
   </defs>
   <style>
-    text { font-family: "Segoe UI", system-ui, Arial, sans-serif; fill: #2b1518; }
-    .t { font-size: 22px; font-weight: 700; } .s { font-size: 15px; fill: #5f4a4f; } .m { font-size: 13px; fill: #7a6468; }
-    .caixa { fill: #fff; stroke: #432328; stroke-width: 2.5; } .nucleo { fill: #fdf1f2; stroke: #DC3545; stroke-width: 3.5; }
-    .ext { fill: #f6f1f2; stroke: #8a7378; stroke-width: 2; stroke-dasharray: 6 5; }
-    .lin { stroke: #432328; stroke-width: 2.5; fill: none; } .lin2 { stroke: #8a7378; stroke-width: 2; fill: none; stroke-dasharray: 6 5; }
+    text { font-family: "Segoe UI", system-ui, Arial, sans-serif; fill: #0a2540; }
+    .t { font-size: 22px; font-weight: 700; } .s { font-size: 15px; fill: #4a545f; } .m { font-size: 13px; fill: #646e7a; }
+    .caixa { fill: #fff; stroke: #12395f; stroke-width: 2.5; } .nucleo { fill: #f3f7fb; stroke: #2f86eb; stroke-width: 3.5; }
+    .ext { fill: #f1f3f6; stroke: #737e8a; stroke-width: 2; stroke-dasharray: 6 5; }
+    .lin { stroke: #12395f; stroke-width: 2.5; fill: none; } .lin2 { stroke: #737e8a; stroke-width: 2; fill: none; stroke-dasharray: 6 5; }
   </style>
   <rect width="1100" height="520" fill="#ffffff"/>
   <!-- navegador -->
@@ -18,7 +18,7 @@
   <text class="m" x="130" y="286" text-anchor="middle">HTML + JS (sem innerHTML)</text>
   <!-- backdraft -->
   <rect class="nucleo" x="340" y="120" width="330" height="280" rx="14"/>
-  <text class="t" x="505" y="160" text-anchor="middle" fill="#DC3545" style="fill:#b52a37">Backdraft</text>
+  <text class="t" x="505" y="160" text-anchor="middle" fill="#2f86eb" style="fill:#1b64c0">Backdraft</text>
   <text class="s" x="505" y="184" text-anchor="middle">um processo Python, só a biblioteca padrão</text>
   <g class="s">
     <text x="365" y="222">• login (usuário local ou LDAPS) e sessão assinada</text>
